@@ -96,26 +96,26 @@ All tests were created and executed using the Eclipse IDE’s built-in JUnit sup
 
 ## Project Structure
 
-## Project Structure
-
 ```
 Train-Simulator-CLI/
 │
 └─ src/
-   ├─ db/                                     `# Directory containing train station CSV data`
+   ├─ db/                     # Directory containing train station CSV data
    └─ src/
       └─ trainSimulation/
-         ├─ `Carriage.java           # Carriage object, handles passenger count (traversing)`
-         ├─ `CSVReader.java          # Manages the reading and processing of all external CSV files`
-         ├─ `Locomotive.java         # Train engine object`
-         ├─ `Main.java               # Entry point of the console program`
-         ├─ `Menu.java               # Handler for each menu screen/prompt`
-         ├─ `Platform.java           # Platform object for train stations, handles passenger count (idle)`
-         ├─ `SimulationData.java     # Last simulation statistics handler`
-         ├─ `Tests.java              # JUnit tests`
-         ├─ `Train.java              # Train object, handles carriages and locomotives`
-         ├─ `TrainLine.java          # Handles multiple routes of a single train line`
-         ├─ `TrainRoute.java         # Handles the journey of the train (station order)`
-         ├─ `TrainStation.java       # Train station object, handles respective platforms`
-         └─ `TrainSystem.java        # Handles all registered train lines`
+         ├─ Carriage.java           # Carriage object, handles passenger count (traversing)
+         ├─ CSVReader.java          # Manages the reading and processing of all external CSV files
+         ├─ Locomotive.java         # Train engine object
+         ├─ Main.java               # Entry point of the console program
+         ├─ Menu.java               # Handler for each menu screen/prompt
+         ├─ Platform.java           # Platform object for train stations, handles passenger count (idle)
+         ├─ SimulationData.java     # Last simulation statistics handler
+         ├─ Tests.java              # JUnit tests
+         ├─ Train.java              # Train object, handles carriages and locomotives
+         ├─ TrainLine.java          # Handles multiple routes of a single train line
+         ├─ TrainRoute.java         # Handles the journey of the train (station order)
+         ├─ TrainStation.java       # Train station object, handles respective platforms
+         └─ TrainSystem.java        # Handles all registered train lines
 ```
+
+---
