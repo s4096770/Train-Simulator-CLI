@@ -1,7 +1,5 @@
 # Train Simulator CLI
 
-![Java Badge](readme-images/java-badge.png)
-
 This terminal-based train simulator provides a simulated command-line experience of a train operating along Melbourne’s Pakenham line. Built in Java with Eclipse and thoroughly tested using JUnit, the simulator derives passenger count data from CSV files and offers train customisation and statistical reporting.
 
 ---
