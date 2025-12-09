@@ -22,7 +22,7 @@ This terminal-based train simulator provides a simulated command-line experience
 - **Real-time Statistics:** Display stats such as CO2 emissions, passengers left behind, passengers carried, and complaints.
 - **JUnit Test Suite:** Comprehensive automated tests covering core functionality, data parsing, and statistical calculations.
 
-> [!NOTE]  
+> [!NOTE]
 > The train line does not contain every station.
 
 ---
@@ -62,24 +62,24 @@ cd train-simulator-cli
 ## Usage
 
 1. **Loading Passenger Data**  
-Select **c)** Import train stations map CSV → **a)** Import CSV from File  
+Select `c)` *Import train stations map CSV*, then `a)` *Import CSV from File*  
 Return to Main Menu  
-Select **d)** Import station demand CSV → **a)** Import CSV from File
+Select `d)` *Import a train station’s demand CSV*, then `a)` *Import CSV from File* (number of passengers)
 
 2. **Creating a Train**  
-Select **g)** Simulate a train run → **a)** Add/remove a carriage
+Select `g)` *Simulate a train run* → `a)` *Add/remove a carriage*
 
 3. **Configuring the Train Line and Direction**  
-Select **b)** Specify line and direction
+Select `b)` *Specify line and direction*
 
 4. **Configuring the Time of Day**  
-Select **c)** Specify time session
+Select `c)` *Specify time session*
 
 5. **Running the Simulation**  
-Select **d)** Run sim
+Select `d)` *Run sim*
 
 6. **Viewing Statistics**  
-Select **h)** Show statistics based on last run
+Select `h)` *Show statistics based on last run*
 
 ---
 
@@ -100,23 +100,23 @@ All tests were created and executed using the Eclipse IDE’s built-in JUnit sup
 Train-Simulator-CLI/
 │
 ├─ src/
-│  └─ trainSimulation/
-│     ├─ Carriage.java
-│     ├─ CSVReader.java
-│     ├─ Locomotive.java
-│     ├─ Main.java
-│     ├─ Menu.java
-│     ├─ Platform.java
-│     ├─ SimulationData.java
-│     ├─ Tests.java
-│     ├─ Train.java
-│     ├─ TrainLine.java
-│     ├─ TrainRoute.java
-│     ├─ TrainStation.java
-│     └─ TrainSystem.java
+│  └─ trainSimulation/              # Controller logic for routes
+│     ├─ Carriage.java              # Carriage object, handles passenger count (traversing)
+│     ├─ CSVReader.java             # Manages the reading and processing of all external CSV files
+│     ├─ Locomotive.java            # Train engine object
+│     ├─ Main.java                  # Entry point of the console program
+│     ├─ Menu.java                  # Handler for each menu screen/prompt
+│     ├─ Platform.java              # Platform object for train stations, handles passenger count (idle)
+│     ├─ SimulationData.java        # Last simulation statistics handler
+│     ├─ Tests.java                 # JUnit tests
+│     ├─ Train.java                 # Train object, handles carriages and locomotives
+│     ├─ TrainLine.java             # Handles multiple routes of a single train line
+│     ├─ TrainRoute.java            # Handles the journey of the train (station order)
+│     ├─ TrainStation.java          # Train station object, handles respective platforms
+│     └─ TrainSystem.java           # Handles all registered train lines
 │
-├─ db/
-├─ readme-images/
+├─ db/                              # Directory containing train station CSV data
+├─ readme-images/                   # Contains Main-Menu.png + java-badge.png
 │     ├─ Main-Menu.png
 │     └─ java-badge.png
 └─ README.md
